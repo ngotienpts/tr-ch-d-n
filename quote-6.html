@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .temp-container {
+            background-color: #8a0100;
+            position: relative;
+        }
+
+        .temp-img-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .temp-img-row img {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .temp-img-row--bg-white {
+            position: relative;
+        }
+        .temp-img-row--bg-white::before {
+            position: absolute;
+            content: '';
+            height: 70%;
+            width: 100%;
+            background-color: #fff;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+        .temp-img-row--bg-white .inner {
+            position: relative;
+            z-index: 10;
+
+        }
+     
+       
+    
+        @media (max-width: 768px) {
+           
+        
+        }
+    </style>
+<div class="temp-container">
+    <div class="temp-img">
+        <div class="temp-img-row">
+            <img src="https://t.ex-cdn.com/theleader.vn/640w/files/news/2025/02/20/tay-ho150-1542.jpg" alt="">
+        </div>
+        <div class="temp-img-row temp-img-row--bg-white">
+            <div class="inner">
+                <img src="https://t.ex-cdn.com/theleader.vn/640w/files/news/2025/02/20/tay-ho150-1542.jpg" alt="">
+            </div>
+            <div class="inner">
+                <img src="https://t.ex-cdn.com/theleader.vn/640w/files/news/2025/02/20/tay-ho150-1542.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
